@@ -1,90 +1,82 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-	<!-- META -->
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<head>
+		<!-- META -->
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<!-- TÍTULO -->
-	<title>Kenzieflix</title>
+		<!-- TÍTULO -->
+		<title>Kenzieflix</title>
 
-	<!-- CSS -->
-	<link rel="stylesheet" href="css/style.css" />
+		<!-- CSS -->
+		<link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" href="css/style.css" />
 
-	<!-- FAVICON -->
-	<link rel="shortcut icon" type="image/x-icon" href="./img/favicon.png" /> 
-</head>
-<body>
-	
-	<!-- CABEÇALHO -->
-	<header class="topo">
-		<figure>
-			<img src="img/logo.png" alt="Kenzieflix">
-			<figcaption>Kenzieflix</figcaption>
-		</figure>
-	</header>
+		<!-- FAVICON -->
+		<link rel="shortcut icon" type="image/x-icon" href="./img/favicon.png" /> 
+	</head>
 
-	<!-- PÁGINA INICIAL -->
-	<div class="pg-home">
+	<body>
 		
-		<section>
+		<header class="header">
+			<figure class="header__logo">
+				<img src="img/logo.png" alt="Kenzieflix">
+				<figcaption>Kenzieflix</figcaption>
+			</figure>
+		</header>
 
-			<header>
-				<h2>Quem está assistindo?</h2>
+			
+		<section class="content">
+
+			<header class="content__header">
+					<h2>Quem está assistindo?</h2>
 			</header>
 
-			<!-- LISTA DE USUÁRIOS -->
-			<ul>
-				
-				<!-- USUÁRIO 1 -->
-				<li>
-					<figure>
+			<ul class="content__list list">
+					
+				<li class="list__item item">
+					<figure class="item__img">
 						<img src="img/avatar.png" alt="Gabriel">
 						<figcaption>Gabriel</figcaption>
 					</figure>
 
-					<h3>Gabriel</h3>
+					<h3 class="item__name">Gabriel</h3>
 				</li>
-				
-				<!-- USUÁRIO 2 -->
-				<li>
-					<figure>
+					
+				<li class="list__item item">
+					<figure class="item__img">
 						<img src="img/avatar1.png" alt="Maria">
 						<figcaption>Maria</figcaption>
 					</figure>
 
-					<h3>Maria</h3>
+					<h3 class="item__name">Maria</h3>
 				</li>
-				
-				<!-- USUÁRIO 3 -->
-				<li>
-					<figure>
+					
+				<li class="list__item item">
+					<figure class="item__img">
 						<img src="img/avatar2.png" alt="Renato">
 						<figcaption>Renato</figcaption>
 					</figure>
 
-					<h3>Renato</h3>
+					<h3 class="item__name">Renato</h3>
 				</li>
 
-				<!-- ADICIONAR PERFIL-->
-				<li class="addPerfil">
-					<figure>
+				<li class="list__item item" id="addProfile">
+					<figure class="item__img">
 						<img src="img/plus-sign.png" alt="Adicionar perfil">
 						<figcaption>Adicionar perfil</figcaption>
 					</figure>
 
-					<h3>Adicionar perfil</h3>
+					<h3 class="item__name">Adicionar perfil</h3>
 				</li>
 
 			</ul>
 
-			<footer>
-				<button>Gerenciar Perfis</button>
+			<footer class="content__footer">
+				<button class="content__footer__btn">Gerenciar Perfis</button>
 			</footer>
 
 		</section>
 
-	</div>
-
-</body>
+	</body>
 </html>
