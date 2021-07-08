@@ -38,14 +38,14 @@ figcaption {
 	color: white;
 }
 
-.item .item__img img:hover {
-	cursor:pointer;
-	border: 2px gray solid;
+.item .item__img img {
+	width: 186px;
+	border: 2px solid #00002e;
 }
 
-li#addProfile .item__img {
-	margin-top: 120px;
-	margin-bottom: 120px;
+.item .item__img img:hover {
+	cursor:pointer;
+	border-color: gray;
 }
 
 .content__footer {
@@ -66,6 +66,7 @@ li#addProfile .item__img {
 	cursor: pointer;
 }
 
+
 @media (min-width: 1450px){
 
 	.header .header__logo{
@@ -80,8 +81,8 @@ li#addProfile .item__img {
 		margin-top: 135px;
 	}
 	
-	.content .content__header {
-		font-size: 2rem;
+	.content .content__header h2{
+		font-size: 2em;
 	}
 
 	.content__list {
@@ -89,5 +90,5 @@ li#addProfile .item__img {
 		justify-content: center;
 		margin: 0 auto;
 	}
-	
+
 }
